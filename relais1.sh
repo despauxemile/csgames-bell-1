@@ -16,14 +16,26 @@ while IFS= read -r line; do
         continue
     fi
 
-    # email valide AINT HAPPENIN
+    # email valide AINT HAPPENIN!!
     # (echo -n "${EMAIL}" | grep -Eq '\S+@\S+\.\S+') && echo -n "" || echo "inv"
     # if [[ "${EMAIL}" =~ \S* ]]; then
     # if  [[ "${EMAIL}" =~ \S ]]; then
     # if [[ "${EMAIL}" =~ \\S+@\\S+\\.\\S+ ]]; then
         # echo $EMAIL
     # fi
-
+    
+    # 2e part => thing
+    # while IFS='' read -r v_line; do
+    #     IFS=',' read VID _ _ _ DUR; <<< $v_line
+    #
+    #     TOTAL=0
+    #     if [[ ${ID} == ${VID} ]]; then
+    #         echo $DUR
+    #         TOTAL=$((TOTAL+DUR))
+    #         # let $TOTAL += $DUR
+    #     fi
+    #     # echo $TOTAL
+    # done < $VIEWING_F
 
     echo $line
 done < $CUSTOMERS_F
